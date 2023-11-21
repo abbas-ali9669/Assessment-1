@@ -25,9 +25,9 @@ namespace Assessment_1
 
             // QuestionFour.maxOccur();
 
-            // QuestionFive.isPrime();
+            QuestionFive.isPrime();
 
-            QuestionSix.StrToDec("hello world");
+            // QuestionSix.StrToDec("hello world");
             // QuestionSix.method2();
 
             Console.ReadLine();
@@ -184,8 +184,11 @@ namespace Assessment_1
     {
         public static void StrToDec(string str)
         {
+            // BitConverter class is used convert the datatype from on to another.
             // After alot of exploration, I found this method because i can split the string and add the spaces after every 2 number.
             byte[] bytes = Encoding.ASCII.GetBytes(str);
+
+            // I have used GetBytes method of BitConverter class to get the hexadecimal value of each character.
             string hex = BitConverter.ToString(bytes);
             string putSpaces = hex.Replace("-", " ");
             string chToLower = putSpaces.ToLower();
