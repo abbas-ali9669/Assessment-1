@@ -27,7 +27,8 @@ namespace Assessment_1
 
             // QuestionFive.isPrime();
 
-            QuestionSix.StrToDec("Hello World");
+            // QuestionSix.StrToDec("Hello World");
+            QuestionSix.method2();
 
             Console.ReadLine();
         }
@@ -184,7 +185,21 @@ namespace Assessment_1
         public static void StrToDec(string str)
         {
             byte[] bytes = Encoding.ASCII.GetBytes(str);
-            string hex = BitConverter.ToString(bytes).Replace("-", "");
+            string hex = BitConverter.ToString(bytes).Replace("-", " ");
+            Console.WriteLine(hex);
+        }
+
+        public static void method2()
+        {
+            string str = "a";
+            // StringBuilder sb = new StringBuilder();
+            string sb = "";
+            foreach (char c in str)
+            {
+                // sb.Append(((int)c).ToString("X2"));
+                sb += Convert.ToString((int)c);
+            }
+            string hex = sb.ToString();
             Console.WriteLine(hex);
         }
 
