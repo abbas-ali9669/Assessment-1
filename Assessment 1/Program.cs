@@ -25,7 +25,7 @@ namespace Assessment_1
 
             // QuestionFour.maxOccur();
 
-            // QuestionFive.isPrime();
+            QuestionFive.isPrime();
 
             Console.ReadLine();
         }
