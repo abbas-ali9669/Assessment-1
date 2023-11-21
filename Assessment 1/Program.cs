@@ -25,9 +25,9 @@ namespace Assessment_1
 
             // QuestionFour.maxOccur();
 
-            QuestionFive.isPrime();
+            //QuestionFive.isPrime();
 
-            // QuestionSix.StrToDec("hello world");
+            QuestionSix.StrToDec("hello world");
             // QuestionSix.method2();
 
             Console.ReadLine();
