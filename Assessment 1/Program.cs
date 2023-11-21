@@ -25,7 +25,9 @@ namespace Assessment_1
 
             // QuestionFour.maxOccur();
 
-            QuestionFive.isPrime();
+            // QuestionFive.isPrime();
+
+            QuestionSix.StrToDec("Hello World");
 
             Console.ReadLine();
         }
@@ -175,5 +177,16 @@ namespace Assessment_1
                 }
             }
         }
+    }
+
+    class QuestionSix
+    {
+        public static void StrToDec(string str)
+        {
+            byte[] bytes = Encoding.ASCII.GetBytes(str);
+            string hex = BitConverter.ToString(bytes).Replace("-", "");
+            Console.WriteLine(hex);
+        }
+
     }
 }
