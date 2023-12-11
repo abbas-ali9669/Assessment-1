@@ -11,6 +11,7 @@ namespace Assessment_1
         static void Main(string[] args)
 
         {
+             // These are the assessment Questions
 
             // QuestionOne.ReverseAndNot(123);
             // QuestionOne.ReverseAndNot(152);
@@ -29,7 +30,7 @@ namespace Assessment_1
 
             QuestionSix.StrToDec("hello world");
             // QuestionSix.method2();
-
+            Console.WriteLine("Hello C# Community");
             Console.ReadLine();
         }
     }
